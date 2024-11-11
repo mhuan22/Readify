@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readify</title>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+    <script src="OCR.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Readify Test App</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <button onclick="performOCR()">Extract Text</button>
+    <div id="output" style="margin-top: 20px; font-family: Arial, sans-serif;"></div>
+
+    <button onclick="speakText()">Audio</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <button onclick="resumeAudio()">Resume</button>
+    <button onclick="rewindAudio()">Rewind 10s</button>
+    <button onclick="forwardAudio()">Forward 10s</button>
+
+</body>
+</html>
